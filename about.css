@@ -1,0 +1,79 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .about-advanced {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(to right, #ffffff, #f1f4f9);
+      padding: 80px 0 120px;
+    }
+
+    .about-advanced .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .about-advanced .tagline {
+      color: #ff4500;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .about-img-wrapper {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .about-img-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .about-img-wrapper:hover::before {
+      opacity: 1;
+    }
+
+    .about-img-wrapper img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transform: scale(1);
+      transition: transform 0.5s ease;
+    }
+
+    .about-img-wrapper:hover img {
+      transform: scale(1.05);
+    }
+
+    .svg-decorator {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .svg-decorator svg {
+      display: block;
+      width: 100%;
+      height: 100px;
+    }
+
+    .btn-rounded {
+      border-radius: 50px;
+      padding: 10px 25px;
+    }

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suit | ChrisolikHotels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/styles.css">
+  <link rel="shortcut icon" href="/images/hot-logo.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Header Placeholder -->
+<nav class="navbar navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="index.html"></a>
+</nav>
+
+<!-- 🔹 Top Info Bar -->
+<div class="top-info py-2 px-3">
+
+    <div class="navbar navbar-dark px-3">
+        <a class="navbar-brand" href="index.html">← Back to Rooms</a>
+    </div>
+
+  <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center">
+      <i class="fas fa-map-marker-alt me-2 text-danger"></i>
+      <span>Plot 5a Peter Odili Road, Off Trans-Amadi, Port Harcourt, Nigeria</span>
+    </div>
+    <div class="d-flex align-items-center">
+      <i class="fas fa-phone-alt me-2 text-danger"></i>
+      <span>+2348033132899, +2349032334004</span>
+    </div>
+    <div class="d-flex gap-4">
+      <a href="https://www.facebook.com/share/1FcdzPFdBS/?mibextid=wwXIfr" class="text-light" target="_blank"><i class="fab fa-facebook-f" title="facebook"></i></a>
+      <a href="#" class="text-light" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a>
+      <a href="#" class="text-light" target="_blank"><i class="fab fa-twitter" title="X"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 🔹 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-custom">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Logo + Name -->
+    <a class="navbar-brand d-flex align-items-center" href="/index.html">
+      <img src="/images/hot-logo.png" alt="Chrisolik Logo" class="hotel-logo me-2">
+      <span class="hotel-name">Chrisolik Hotels LTD</span>
+    </a>
+
+    <!-- Hamburger Icon -->
+<button class="custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="toggler-icon top-bar"></span>
+  <span class="toggler-icon middle-bar"></span>
+  <span class="toggler-icon bottom-bar"></span>
+</button>
+
+    <!-- Nav Items -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-uppercase gap-3">
+        <li class="nav-item"><a class="nav-link active text-warning" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="roomsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Rooms</a>
+          <ul class="dropdown-menu" aria-labelledby="roomsDropdown">
+            <li><a class="dropdown-item" href="/exclusive.html">EXCLUSIVE</a></li>
+            <li><a class="dropdown-item" href="/executive.html">EXECUTIVE</a></li>
+            <li><a class="dropdown-item" href="/room-details.html">EXCELLENT</a></li>
+            <li><a class="dropdown-item" href="/suit.html">SUIT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">Events</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/about.html">About Us</a></li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="roomsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+          <ul class="dropdown-menu" aria-labelledby="roomsDropdown">
+            <li class="mb-1"><i class="fas fa-phone text-danger me-2"> 08033132899</i></li>
+            <li><i class="fas fa-phone text-danger me-2"> 09032334004</i></li>
+            <li><i class="fas fa-phone text-danger me-2"> 08129784539</i></li>
+            <li><i class="fas fa-phone text-danger me-2"> 09037833610</i></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="custom-carousel-container position-relative mb-4">
+  <div class="custom-carousel-track d-flex gap-2" id="carouselTrack">
+    <!-- Original images -->
+    <img src="images/suit1.jpg" alt="Room image 1" class="carousel-img">
+    <img src="./image/suit7.jpg" alt="Room image 2" class="carousel-img">
+    <img src="./image/suit2.jpg" alt="Room image 3" class="carousel-img">
+    <img src="./image/suit8.jpg" alt="Room image 4" class="carousel-img">
+    <img src="/images/IMG-20250628-WA0041.jpg" alt="Room image 5" class="carousel-img">
+    <img src="images/room2.JPG" alt="Room image 6" class="carousel-img">
+
+    <!-- Duplicate first 4 images for smooth loop
+    <img src="images/room4-1.jpg" alt="Duplicate" class="carousel-img">
+    <img src="images/room4-2.jpg" alt="Duplicate" class="carousel-img">
+    <img src="images/room4-3.jpg" alt="Duplicate" class="carousel-img">
+    <img src="images/room4-4.jpg" alt="Duplicate" class="carousel-img"> -->
+  </div>
+
+  <!-- Arrows -->
+  <button class="carousel-arrow left" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+  <button class="carousel-arrow right" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+
+  <!-- Camera Count -->
+  <div class="camera-count">
+    <i class="fas fa-camera me-1"></i><span id="imageCount">6</span>
+  </div>
+</div>
+
+
+<!-- Room Info and Booking Section -->
+
+<section class="room-info-section py-5">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+
+        <div class="col-lg-8">
+        <h3 class="fw-semibold">Suit Room</h3>
+        <p class="text-danger fs-4">From <strong>₦45,000</strong> <span class="text-muted">Per Night</span></p>
+
+        <!-- Room icons -->
+        <div class="d-flex gap-5 mt-3">
+          <div class="text-center">
+            <li class="list-inline-item me-4 text-danger">
+                <i class="fas fa-user-friends me-1"></i>
+            </li>
+            <div class="small fw-semibold">1 Person<br><span class="text-muted">Guests</span></div>
+          </div>
+          <div class="text-center">
+            <li class="list-inline-item me-4 text-danger">
+                <i class="fas fa-bed"></i>
+            </li>
+            <div class="small fw-semibold">1 King<br><span class="text-muted">Bed Size</span></div>
+          </div>
+          <div class="text-center">
+            <li class="list-inline-item me-4 text-danger">
+                <i class="fas fa-eye"></i>
+            </li>
+            <div class="small fw-semibold">City<br><span class="text-muted">View</span></div>
+          </div>
+        </div>
+      
+
+        <!-- Overview -->
+        <h5 class="mt-5 fw-bold">Overview</h5>
+        <p class="text-muted">
+          Experience the height of comfort and elegance in our luxurious Suite Room — designed for guests who seek premium hospitality with a touch of class. Each suite offers a spacious, thoughtfully decorated interior with modern furnishings, a plush king-size bed, and a separate living area for added comfort.
+        </p>
+
+        <!-- Amenities -->
+        <h5 class="mt-4 fw-bold">Room Amenities</h5>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 mt-2">
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-snowflake"></i>Air Conditioning</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-mug-hot"></i>Coffee maker</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-tv"></i>Flat-Screen Television</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-bath"></i>Toiletries and Kits</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-shower"></i>Bathrobes and Slippers</div>
+          <!-- <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-utensils"></i>Complimentary Breakfast</div> -->
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-parking"></i>Car Parking</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-chair"></i>Desk and Chairs</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-soap"></i>Laundry Service</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-wifi"></i>Wireless Internet</div>
+          <div class="d-flex align-items-center gap-2 text-danger"><i class="fas fa-ice-cream"></i>Refrigerator</div>
+        </div>
+      </div>
+
+      <!-- Right: Booking Box -->
+      <div class="col-lg-4">
+        <div class="booking-box">
+          <h5 class="mb-3">Book Room</h5>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">From:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">To:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Guests:</label>
+              <p class="text-muted small mb-0">please, select date first</p>
+            </div>
+            <hr>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Total:</label>
+              <p class="text-muted">-</p>
+            </div>
+            <button class="btn w-100"><i class="fas fa-cart-plus me-1"></i>BOOK NOW</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section text-light pt-5 pb-4 bg-dark">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <img src="/images/hot-logo.png" alt="logo" class="me-2" style="height: 50px;">
+          <h4 class="m-0 fw-bold">Chrisolik Hotels LTD</h4>
+        </div>
+        <p class="text-light small">
+          At our hotel, excellence is a reflection of our dedication to quality and professionalism. With a commitment to precision and hard work, our staff ensures you receive nothing but the finest services.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class=" mb-3">Links</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none">Hotel Rooms</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Restaurant</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Pool</a></li>
+          <!-- <li><a href="#" class="text-white text-decoration-none">Gym</a></li> -->
+          <li><a href="/about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class=" mb-3">Contact</h5>
+        <p><i class="fas fa-map-marker-alt text-danger me-2"></i> Plot 5a Peter Odili Road, Port Harcourt, Nigeria</p>
+        <p><i class="fas fa-envelope text-danger me-2"></i>chrisolikhotelltd@gmail.com</p>
+        <p class="mb-1"><i class="fas fa-phone text-danger me-2"></i> +2348033132899</p>
+        <p><i class="fas fa-phone text-danger me-2"></i> +2349032334004</p>
+        <p><i class="fas fa-phone text-danger me-2"></i> +2348129784539</p>
+        <p><i class="fas fa-phone text-danger me-2"></i> +2349037833610</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class=" mb-3">Newsletter</h5>
+        <p class="text-light small">Sign up now for weekly news and updates.</p>
+        <form class="d-flex bg-secondary-subtle p-2 rounded" onsubmit="event.preventDefault();">
+          <input type="email" class="form-control border-0 bg-transparent text-light" placeholder="Email address" required>
+          <button class="btn text-danger" type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
+          <label class="form-check-label small text-light" for="termsCheck">
+            I agree to all terms and policies.
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <hr class="border-secondary mt-5">
+    <div class="d-flex justify-content-between flex-wrap align-items-center pt-3">
+      <p class="mb-0 small text-light">© Copyright 2024 - 2025 by Chrisolik Hotels LTD</p>
+      <div class="social-icons d-flex gap-3">
+        <a href="#" class="text-light bg-black rounded-circle p-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light bg-black rounded-circle p-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/share/1FcdzPFdBS/?mibextid=wwXIfr" class="text-light bg-black rounded-circle p-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const pricePerNight = 190000;
+  const checkin = document.getElementById("checkin");
+  const checkout = document.getElementById("checkout");
+  const totalPrice = document.getElementById("totalPrice");
+
+  function updatePrice() {
+    const checkInDate = new Date(checkin.value);
+    const checkOutDate = new Date(checkout.value);
+    const nights = (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24);
+    if (nights > 0) {
+      totalPrice.textContent = `₦${(nights * pricePerNight).toLocaleString()}`;
+    } else {
+      totalPrice.textContent = "₦0";
+    }
+  }
+
+  checkin.addEventListener("change", updatePrice);
+  checkout.addEventListener("change", updatePrice);
+</script>
+
+<script>
+  const carousel = document.getElementById("carouselTrack");
+  const imageCount = document.getElementById("imageCount");
+  const images = carousel.querySelectorAll(".carousel-img");
+  const totalOriginal = 6;
+  const imageWidth = carousel.offsetWidth / 4;
+
+  let scrollPos = 0;
+  let interval;
+
+  imageCount.textContent = totalOriginal;
+
+  function autoScroll() {
+    scrollPos += imageWidth;
+    if (scrollPos >= carousel.scrollWidth - carousel.offsetWidth) {
+      scrollPos = 0;
+      carousel.scrollLeft = 0;
+    } else {
+      carousel.scrollLeft = scrollPos;
+    }
+  }
+
+  // Arrow button control
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    scrollPos += imageWidth;
+    if (scrollPos >= carousel.scrollWidth - carousel.offsetWidth) {
+      scrollPos = 0;
+    }
+    carousel.scrollLeft = scrollPos;
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    scrollPos -= imageWidth;
+    if (scrollPos < 0) {
+      scrollPos = carousel.scrollWidth - carousel.offsetWidth;
+    }
+    carousel.scrollLeft = scrollPos;
+  });
+
+  // Auto-slide
+  interval = setInterval(autoScroll, 4000);
+
+  // Reset scrollPos on manual scroll
+  carousel.addEventListener("scroll", () => {
+    scrollPos = carousel.scrollLeft;
+  });
+
+  // Recalculate on resize
+  window.addEventListener("resize", () => {
+    scrollPos = carousel.scrollLeft;
+  });
+</script>
+</body>
+</html>

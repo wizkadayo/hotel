@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Chrisolik Hotels</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./images/hot-logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- 🔹 Top Info Bar -->
+<div class="top-info py-2 px-3">
+  <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center">
+      <i class="fas fa-map-marker-alt me-2 text-danger"></i>
+      <span>Plot 5a Peter Odili Road, Off Trans-Amadi, Port Harcourt, Nigeria</span>
+    </div>
+    <div class="d-flex align-items-center">
+      <i class="fas fa-phone-alt me-2 text-danger"></i>
+      <span>+2348033132899, +2349032334004</span>
+    </div>
+    <div class="d-flex gap-4">
+      <a href="https://www.facebook.com/share/1FcdzPFdBS/?mibextid=wwXIfr" class="text-light" target="_blank"><i class="fab fa-facebook-f" title="facebook"></i></a>
+      <a href="#" class="text-light" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a>
+      <a href="#" class="text-light" target="_blank"><i class="fab fa-twitter" title="X"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-custom">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Logo + Name -->
+    <a class="navbar-brand d-flex align-items-center" href="/index.html">
+      <img src="/images/hot-logo.png" alt="Chrisolik Logo" class="hotel-logo me-2">
+      <span class="hotel-name">Chrisolik Hotels LTD</span>
+    </a>
+
+    <!-- Hamburger Icon -->
+<button class="custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="toggler-icon top-bar"></span>
+  <span class="toggler-icon middle-bar"></span>
+  <span class="toggler-icon bottom-bar"></span>
+</button>
+
+    <!-- Nav Items -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-uppercase gap-3">
+        <li class="nav-item"><a class="nav-link active text-warning" href="/index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="roomsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Rooms</a>
+          <ul class="dropdown-menu" aria-labelledby="roomsDropdown">
+            <li><a class="dropdown-item" href="/exclusive.html">EXCLUSIVE</a></li>
+            <li><a class="dropdown-item" href="/executive.html">EXECUTIVE</a></li>
+            <li><a class="dropdown-item" href="/room-details.html">EXCELLENT</a></li>
+            <li><a class="dropdown-item" href="/suit.html">SUIT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">Events</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="/about.html">About Us</a></li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="contactsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+          <ul class="dropdown-menu" aria-labelledby="contactsDropdown">
+            <li class="mb-1"><i class="fas fa-phone text-danger me-2"> 08033132899</i></li>
+            <li><i class="fas fa-phone text-danger me-2"> 09032334004</i></li>
+            <li><i class="fas fa-phone text-danger me-2"> 08129784539</i></li>
+            <li><i class="fas fa-phone text-danger me-2"> 09037833610</i></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="about-advanced" id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <!-- Text Column -->
+      <div class="col-lg-6">
+        <div class="tagline mb-2">About Chrisolik Hotels</div>
+        <h2 class="section-title">Redefining Luxury & Comfort</h2>
+        <p>
+          Chrisolik Hotels Ltd. is a distinguished destination in Port Harcourt, Nigeria, offering guests an unforgettable experience in luxury, elegance, and comfort. Our hotel features state-of-the-art suites, exceptional dining, and world-class service tailored to your personal needs.
+        </p>
+        <p>
+          Whether you're here for leisure, business, or celebration, we guarantee a seamless blend of comfort and sophistication, designed to leave lasting impressions.
+        </p>
+        <a href="/index.html" class="btn btn-danger btn-rounded mt-3">View Our Rooms</a>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-lg-6">
+        <div class="about-img-wrapper">
+          <img src="/images/out1.JPG" alt="Chrisolik Hotel View" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SVG Wave Decoration -->
+  <div class="svg-decorator">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,50 C150,150 350,0 500,100 L500,150 L0,150 Z" style="fill: #ff4500;"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="map-section py-5 bg-light" id="location">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title text-dark">
+        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+        Our Location
+      </h2>
+      <p class="text-muted">Find us in the heart of Port Harcourt, Nigeria.</p>
+    </div>
+
+    <div class="map-embed-wrapper shadow" data-aos="fade-up">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8508532548835!2d7.037875073494034!3d4.795641140830302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cc5d5e0ee6b7%3A0xc593f499221dd9ce!2sChrisolik%20Hotel%20Ltd.!5e0!3m2!1sen!2sng!4v1751375097834!5m2!1sen!2sng" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section text-light pt-5 pb-4 bg-dark">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center mb-3">
+          <img src="/images/hot-logo.png" alt="logo" class="me-2" style="height: 50px;">
+          <h4 class="m-0 fw-bold">Chrisolik Hotels LTD</h4>
+        </div>
+        <p class="text-light small">
+          At our hotel, excellence is a reflection of our dedication to quality and professionalism. With a commitment to precision and hard work, our staff ensures you receive nothing but the finest services.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class=" mb-3">Links</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none">Hotel Rooms</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Restaurant</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Pool</a></li>
+          <!-- <li><a href="#" class="text-white text-decoration-none">Gym</a></li> -->
+          <li><a href="/about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class=" mb-3">Contact</h5>
+        <p><i class="fas fa-map-marker-alt text-danger me-2"></i> Plot 5a Peter Odili Road, Port Harcourt, Nigeria</p>
+        <p><i class="fas fa-envelope text-danger me-2"></i>chrisolik.hotelsltd@gmail.com</p>
+        <p><i class="fas fa-envelope text-danger me-2"></i>chrisolikhotelltd@gmail.com</p>
+        <p><i class="fas fa-envelope text-danger me-2"></i>christopherorji96@yahoo.com</p>
+        <p class="mb-1"><i class="fas fa-phone text-danger me-2"></i> +2348033132899</p>
+        <p><i class="fas fa-phone text-danger me-2"></i> +2349032334004</p>
+        <p><i class="fas fa-phone text-danger me-2"></i> +2348129784539</p>
+        <p><i class="fas fa-phone text-danger me-2"></i> +2349037833610</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class=" mb-3">Newsletter</h5>
+        <p class="text-light small">Sign up now for weekly news and updates.</p>
+        <form class="d-flex bg-secondary-subtle p-2 rounded" onsubmit="event.preventDefault();">
+          <input type="email" class="form-control border-0 bg-transparent text-light" placeholder="Email address">
+          <button class="btn text-danger" type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+          <label class="form-check-label small text-light" for="termsCheck">
+            I agree to all terms and policies.
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <hr class="border-secondary mt-5">
+    <div class="d-flex justify-content-between flex-wrap align-items-center pt-3">
+      <p class="mb-0 small text-light">© Copyright 2024 - 2025 by Chrisolik Hotels LTD</p>
+      <div class="social-icons d-flex gap-3">
+        <a href="#" class="text-light bg-black rounded-circle p-2" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light bg-black rounded-circle p-2" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/share/1FcdzPFdBS/?mibextid=wwXIfr" target="_blank" class="text-light bg-black rounded-circle p-2"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

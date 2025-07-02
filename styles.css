@@ -1,0 +1,325 @@
+body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Top Info Bar */
+    .top-info {
+      background: #111;
+      color: #fff;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+    }
+    .top-info.hidden {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      background-color: #292836;
+    }
+    .navbar-custom.scrolled {
+      background-color: #292836 !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .hotel-logo {
+      height: 75px;
+    }
+    .hotel-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: orangered;
+    }
+
+    /* Dropdown on Hover */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      animation: dropdownFadeSlide 0.3s ease forwards;
+    }
+    @keyframes dropdownFadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 🔹 Burger Wrapper */
+  .custom-toggler {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* 🔹 Burger Lines */
+.toggler-icon {
+  height: 3px;
+  background-color: #f36f45;
+  border-radius: 2px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* 🔹 Animation to X */
+.custom-toggler.active .top-bar {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.custom-toggler.active .middle-bar {
+  opacity: 0;
+}
+
+.custom-toggler.active .bottom-bar {
+  transform: translateY(-9px) rotate(-45deg);
+}
+.about-section h2 {
+  font-family: 'Cinzel', serif;
+  color: #031052;
+}
+.about-section{
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 10rem;
+    background-color: #faf5ef;
+}
+
+.letter-spacing {
+  letter-spacing: 1px;
+}
+
+/* .video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f36f45;;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  z-index: 1;
+} */
+
+.video-play-btn:hover {
+  background: #d6552f;
+}
+.about-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.about-curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100%;
+}
+
+.about-section {
+  position: relative;
+  background-color: #fdfdfd; /* or any light background */
+  padding-bottom: 100px; /* give space for the curve */
+}
+/* 🔹 Wrapper to hold pulse + button */
+.video-play-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔹 Square animated background */
+.pulse-box {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f36f45;
+  animation: pulseBoxAnim 2s infinite ease-in-out;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+/* 🔹 Circular play button stays above */
+.video-play-btn {
+  position: relative;
+  background: #f36f45;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.video-play-btn:hover {
+  background: #d6552f;
+}
+
+/* 🔹 Pulse Animation Keyframes */
+@keyframes pulseBoxAnim {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+.modal-content{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hero-slide {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation: zoomEffect 8s ease-in-out infinite;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.carousel-item {
+  transition: transform 1s ease, opacity 1s ease-in-out;
+}
+
+/* Prevent white flash */
+.carousel-inner, .carousel-item {
+  background-color: #000;
+}
+
+/* Arrows */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: orangered;
+}
+
+.custom-prev {
+  left: 20px;
+}
+
+.custom-next {
+  right: 20px;
+}
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ddd;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  color: white;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+.custom-arrow:hover {
+  background-color: orangered;
+}
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+}
+.map-embed-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 450px;
+  width: 100%;
+}
+
+.map-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.newsletter input::placeholder {
+  color: #ccc;
+}
+
+.toast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
